@@ -29,11 +29,23 @@
         tools:layout_editor_absoluteX="262dp"
         tools:layout_editor_absoluteY="131dp" />
 
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_weight="0.05"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="297dp" />
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:includeFontPadding="true"
         android:text="Resultado"
+        android:textSize="18sp"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="400dp" />
 
@@ -41,16 +53,11 @@
         android:id="@+id/lblResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="10sp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="400dp" />
-
-    <Button
-        android:id="@+id/btnCalcular"
-        android:layout_width="173dp"
-        android:layout_height="47dp"
-        android:layout_weight="0.14"
-        android:text="Calcular"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="297dp" />
+        tools:layout_editor_absoluteY="400dp"
+        tools:textStyle="bold" />
 
 </LinearLayout>

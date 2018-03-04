@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 float altura = Float.parseFloat(vAltura.getText().toString());
 
                 float resultado = peso / (altura * altura);
-                
+
                 if(resultado < 19){
                     //abaixo
                     lblResultado.setText("Abaixo do peso!");
