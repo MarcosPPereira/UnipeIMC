@@ -1,37 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.marcos.imc.MainActivity">
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="173dp"
-        android:layout_height="47dp"
-        android:text="Calcular"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="297dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="82dp"
-        android:layout_height="25dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="185dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="86dp"
-        android:layout_height="25dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="185dp" />
+    tools:context="com.example.marcos.imc.MainActivity"
+    android:weightSum="1">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editAltura"
         android:layout_width="76dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -41,7 +20,7 @@
         tools:layout_editor_absoluteY="134dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editPeso"
         android:layout_width="76dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -49,4 +28,29 @@
         android:text="Peso"
         tools:layout_editor_absoluteX="262dp"
         tools:layout_editor_absoluteY="131dp" />
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/lblResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="173dp"
+        android:layout_height="47dp"
+        android:layout_weight="0.14"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+</LinearLayout>
